@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'insta/base.html' %}
+{% block content %}
     {% for post in posts %}
         <p>{{ post.author }}</p>
         <p>{{ post.image }}</p>
         <p>{{ post.caption }}</p>
         <p>{{ post.created_date }}</p>
     {% endfor %}
-</body>
-</html>
+{% endblock %}
